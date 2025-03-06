@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(to right, #6a11cb, #c51fd4);
+    padding: 20px;
+}
+
+.descricaoHeader {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#titulo {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#imgLogo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.acesse {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#acesse {
+    background-color: #FF6347;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#acesse:hover {
+    background-color: #FF4500;
+}
+
+#acesse:active {
+    background-color: #FF0000;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.conteinerInfo01 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.txtParagrafosecundarioInfo01 {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#txtParagrafoInfo01 {
+    color: black;
+    font-size: 18px;
+}
+
+#txtTitulosecundario {
+    color: black;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+#txtParagrafoterceiroInfo01 {
+    color: black;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.info {
+    background-color: #6a11cb;
+    margin-top: 60px;
+    padding: 30px 0;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#txtTituloinfo03, #txtterceiroInfo03 {
+    color: black;
+    font-size: 24px;
+}
+
+.cta {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .descricaoHeader {
+        width: 100%;
+        text-align: center;
+    }
+
+    .conteinerInfo01 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .imglogoSecundaria img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #txtTitulosecundario {
+        font-size: 28px;
+    }
+
+    #txtParagrafoInfo01 {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    #acesse {
+        padding: 12px 25px;
+    }
+}
